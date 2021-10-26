@@ -1,0 +1,28 @@
+div {
+    width: 70px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: lightblue;
+  }
+  nav {
+      text-align: center;
+  }
+  .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid black;
+    padding: 10px;
+}
+body {
+    text-align: center;
+    background-image: url("https://user-images.githubusercontent.com/88944710/138798465-c9bc74de-a560-4811-91b1-5d60e174e4ac.png");
+}
+head {
+    text-align: center;
+}
+header {
+    color: white;
+}
