@@ -1,28 +1,110 @@
-div {
-    width: 70px;
-    height: 300px;
-    border: 1px solid #c3c3c3;
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 9999;
+
+}
+head nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+header  h1  {
+    justify-content: center;
+    color: rgb(30, 125, 156);
+    font-size: 50px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+header nav ul  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+   
+    
+}
+header nav ul li {
+
+    color: rgb(30, 125, 156);
+  font-size: 25px;
+  list-style: none;
+  padding: 30px ;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: underline solid rgb(30, 125, 156);
+  
+  
+}
+header nav ul :hover {
+    background-color: lightblue;
+    border-radius: 45%;
+}
+
+
+
+body {
+    background-attachment: fixed;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-position: center;
+    background-image: url("https://user-images.githubusercontent.com/88944710/138798465-c9bc74de-a560-4811-91b1-5d60e174e4ac.png");
+}
+#hero-input{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    background-color: lightblue;
-  }
-  nav {
-      text-align: center;
-  }
-  .center {
-    margin: auto;
-    width: 60%;
-    border: 3px solid black;
-    padding: 10px;
+    justify-content: center;
 }
-body {
+#hero-text{
+    color: rgb(30, 125, 156);
+    font-size: 50px;
+    font-weight: bolder;
     text-align: center;
-    background-image: url("https://user-images.githubusercontent.com/88944710/138798465-c9bc74de-a560-4811-91b1-5d60e174e4ac.png");
+    padding: 15px;
 }
-head {
-    text-align: center;
+
+
+#zip {
+    display: flex;
+    color: rgb(30, 125, 156);
+    font-size: 50px;
+    font-weight: bolder;
+justify-content: center;
+flex-wrap: nowrap;
+    
+   
+
 }
-header {
-    color: white;
+#zip-input-form{
+    display: flex;
+    justify-content: center;
 }
+#zip-input {
+    width: 20%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: larger;
+    align-items: center;
+   }
+   button {
+       padding: 7px 20px 7px 20px;
+       background-color: rgb(30, 125, 156);
+       font-size: large;
+       border-radius: 5px;
+       margin-left: 10px;
+   }
+ footer {
+     width: 100%;
+     height: 80px;
+     position: absolute;
+     bottom: 0;
+ }
