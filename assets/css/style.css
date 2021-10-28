@@ -3,73 +3,58 @@
     margin: 0;
 }
 header {
-     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    top: 0;
-    z-index: 9999;
+   
     background-color:rgba(218, 238, 245, 0.5);  
-    border-radius: 10px;
     text-decoration: underline black;
-
-
+    width: 100%;
+    overflow: auto;
 }
 head nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    opacity: .1;
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+    text-align: center; 
 }
-header  h1  {
-    justify-content: center;
-    color: rgb(30, 125, 156);
-    font-size: 50px;
-  padding-top: 20px;
-    padding-right: 25px;
-}
+
 header nav ul  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     list-style: none;
-    padding-top: 25px;
-    border: black;
+    padding: 10px;
+    margin: 1%;
+    font-size: large;
     
     
 }
 header nav ul li a {
-   
-
-    color: aliceblue;
-  font-size: 25px;
-  list-style: none;
-  padding: 20px ;
-  font-size: 40px;
-  font-weight: bolder;
-  margin: 5px;
-  color: rgb(22, 114, 145);
-   border-radius: 30px;
-   text-decoration: underline black;
-
-  
+    font-size: 30px;
+    list-style: none;
+    padding: 5px;
+    font-weight: bolder;
+    margin: 5px;
+    color: rgb(22, 114, 145);
+    border-radius: 5px;
+    text-decoration: underline black;
+    padding: 5px 5px;
 }
 header nav ul li:hover {
     background-color: rgba(218, 238, 245, 0.5);    
     border-radius: 10px;
-    
-
 }
 
-
-
-
 body {
+    margin: 0;
     background-attachment: fixed;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-  background-position: center;
+    background-position: center;
     background-image: url("https://user-images.githubusercontent.com/88944710/138798465-c9bc74de-a560-4811-91b1-5d60e174e4ac.png");
 }
 #hero-input{
@@ -79,14 +64,12 @@ body {
     justify-content: center;
 }
 #hero-text{
-color: rgb(30, 125, 156);  
-font-size: 50px;
+    color: rgb(30, 125, 156);  
+    font-size: 50px;
     font-weight: bolder;
     text-align: center;
     padding: 15px;
-   background-color: rgba(218, 238, 245, 0.5);    
-
-    
+    background-color: rgba(218, 238, 245, 0.5);    
 }
 
 
@@ -138,6 +121,4 @@ font-size: 50px;
     margin-top: 5%;
     text-align: center;
     font-size: large;
-    font-family: ;
-
 }
