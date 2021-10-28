@@ -13,7 +13,7 @@
 <header>
    
     <nav>
-        <ul>
+        <ul class="navbar">
             <li><a href="https://coronavirus.utah.gov/">Latest Updates</a> </li>
             <li><a href="https://coronavirus.utah.gov/vaccine-distribution">Vaccination Sites</a></li>
             <li><a href="https://coronavirus.utah.gov/vaccine-education-resources/">FAQ</a></li>
@@ -21,11 +21,11 @@
         </ul>
         
     </nav>
-    <h1>Covid-19 Testing Resources in Utah</h1>
     </header>
 
 <body>
     <section id="hero">
+        <h1 id="hero-text">Covid-19 Testing Resources in Utah</h1>
         
             <h2 id="hero-text"> Find Covid-19 testing sites in your area</h2>
             <div id="zip-code">
@@ -36,7 +36,9 @@
          <select name="zipcodeslist" id="zipcodelist"></select>
             <button onclick="showResults()" type="submit" id="submit-btn">Search</button>
           </div>
-          <div id="results"></div>
+          <div id="results">
+              
+          </div>
         </div>
         
     
