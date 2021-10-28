@@ -1,8 +1,6 @@
 var validZipEl = document.querySelector("#zipcodelist");
 var allTestingLocations = [];
-
-
-
+var dict = {};
 
 
 var requestOptions = {
@@ -18,10 +16,12 @@ var requestOptions = {
             var option = document.createElement("option")
             option.value = result[i].physical_address[0].postal_code;
             option.text = result[i].physical_address[0].postal_code;
+            dict[result[i].physical_address[0].postal_code]=i;
+            
             validZipEl.appendChild(option);
             
             // console.log(result[i].physical_address[0].postal_code)
-        }
+        } 
        
     })  
 
@@ -29,8 +29,17 @@ var requestOptions = {
 
     
    
-    document.getElementById("submit-btn").addEventListener('click', function() {
+    function showResults() {
        var selectedZipCode = validZipEl.value;
-       var filteredResults = allTestingLocations.filter(location => location.physical_address.filter(address => address.postal_code == selectedZipCode).length > 0)
-        console.log(filteredResults);
-      });
+       var index = dict[selectedZipCode];
+       var physical_address = allTestingLocations[index].physical_address[0].address_1;
+       var name = allTestingLocations[index].alternate_name;
+       var description = allTestingLocations[index].description;
+       var myResults =document.getElementById('results')
+        myResults.innerText ="NEAR YOU: " + name + physical_address + description;
+        
+       
+      //  var filteredResults = allTestingLocations.filter(location => location.physical_address.filter(address => address.postal_code == selectedZipCode).length > 0)
+    
+      };
+      
