@@ -111,7 +111,7 @@ background-color: rgba(218, 238, 245, 0.5);
    }
    #submit-btn {
        padding: 7px 20px 7px 20px;
-       background-color: rgba(30, 125, 156, .8);
+       background-color: rgb(248, 12, 150);
        font-size: 30px;
        border-radius: 10px;
        margin-left: 10px;
@@ -121,4 +121,7 @@ background-color: rgba(218, 238, 245, 0.5);
     font-size: 30px;
     border-radius: 10px;
     margin-right: 10px;
+}
+#results{
+    background-color: white;
 }
