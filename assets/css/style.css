@@ -112,13 +112,13 @@ body {
     margin-right: 10px;
 }
 #results {
-    background-color: lightblue;
+    background-color: rgba(238, 238, 238, .8);
+    border-radius: 20px;
     align-items: center;
     padding-left: 2%;
     padding-right: 2%;
     box-sizing: border-box;
     margin: 20%;
     margin-top: 5%;
-    text-align: center;
-    font-size: large;
+    font-size: 20px;
 }
