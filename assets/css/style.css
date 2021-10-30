@@ -45,6 +45,7 @@ header nav ul li a {
 header nav ul li:hover {
     background-color: rgba(218, 238, 245, 0.5);    
     border-radius: 10px;
+    padding: 0 25px 0 25px;
 }
 
 body {
@@ -62,6 +63,15 @@ body {
     align-content: center;
     justify-content: center;
 }
+#header-text{
+    color: rgb(30, 125, 156);  
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(218, 238, 245, 0.1);    
+}
+
 #hero-text{
     color: rgb(30, 125, 156);  
     font-size: 50px;
@@ -135,3 +145,91 @@ footer span {
   
    
 }
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        
+    }
+    #header-text {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+       
+    }
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 30px;
+    }
+    footer span{
+        text-align: center;
+        font-size: 30px;
+}
+#hero{
+    overflow-y: scroll;
+overflow-x: hidden;
+}
+
+#zip{
+    text-align: center;
+    font-size: 30px;
+}
+#submit-btn {
+    padding-top: 0;
+}
+}
+ /* MEDIA QUERY FOR TABLETS AND SMALLER */
+ @media screen and (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+    
+   }
+     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+
+    header nav ul li a {
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+         }
+      
+      #header-text{
+          text-align: center;
+          font-size: larger;
+      }
+      #hero-text {
+          text-align: center;
+          font-size: medium;
+      }
+      #zip {
+          text-align: center;
+          font-size: medium;
+      }
+      #zipcodelist{
+          width: 100%;
+      }
+      #submit-btn{
+          width: 100%;
+      }
+    }
+      
+
+
+      
+  
+
+    
+   
+  
