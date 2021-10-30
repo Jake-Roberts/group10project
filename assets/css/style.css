@@ -5,7 +5,6 @@
 header {
    
     background-color:rgba(218, 238, 245, 0.5);  
-    text-decoration: underline black;
     width: 100%;
     overflow: auto;
 }
@@ -22,7 +21,7 @@ head nav {
 header nav ul  {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     list-style: none;
@@ -40,7 +39,7 @@ header nav ul li a {
     margin: 5px;
     color: rgb(22, 114, 145);
     border-radius: 5px;
-    text-decoration: underline black;
+    text-decoration: none;
     padding: 5px 5px;
 }
 header nav ul li:hover {
@@ -121,4 +120,20 @@ body {
     margin: 20%;
     margin-top: 5%;
     font-size: 20px;
+}
+footer{
+    margin-top: 100px
+}
+footer span {
+    margin-top: ;
+    display: flex;
+    min-height: 10vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:rgba(30, 125, 156, .5) ;
+    text-align: end;
+    font-size: 50px;
+    color: aliceblue;
+  
+   
 }
