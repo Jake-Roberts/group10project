@@ -39,19 +39,56 @@ var requestOptions = {
        var schedule = allTestingLocations[index].regular_schedule;
        var days = function(){
          for(var i = 0; i < schedule.length; i++){
-          if(schedule[i].weekday == 1){ let day = "Monday"
+          if(schedule[i].weekday == 1){ let day = "Monday:" 
           myResults.innerHTML+=(`
-          <p style="padding: 5px;">${day}</p>
-          <p style="padding: 5px;">Open: ${schedule[i].opens_at}</p>`)
+          <h4 style="padding: 5px;">${day}</h4>
+          <p style="padding: 5px;">Opens: ${schedule[i].opens_at}</p>
+          <p style="padding: 5px;">Closes: ${schedule[i].closes_at}</p>`)
+         }
+          else if(schedule[i].weekday == 2){ let day = "Tuesday:"
+          myResults.innerHTML+=(`
+          <h4 style="padding: 5px;">${day}</h4>
+          <p style="padding: 5px;">Opens: ${schedule[i].opens_at}</p>
+          <p style="padding: 5px;">Closes: ${schedule[i].closes_at}</p>`)
+         }
+          else if(schedule[i].weekday == 3){ let day = "Wednesday:"
+          myResults.innerHTML+=(`
+          <h4 style="padding: 5px;">${day}</h4>
+          <p style="padding: 5px;">Opens: ${schedule[i].opens_at}</p>
+          <p style="padding: 5px;">Closes: ${schedule[i].closes_at}</p>`)
+         }
+          else if(schedule[i].weekday == 4 ){ let day = "Thursday:"
+          myResults.innerHTML+=(`
+          <h4 style="padding: 5px;">${day}</h4>
+          <p style="padding: 5px;">Opens: ${schedule[i].opens_at}</p>
+          <p style="padding: 5px;">Closes: ${schedule[i].closes_at}</p>`)
+         }
+         else if(schedule[i].weekday == 5 ){ let day = "Friday:"
+          myResults.innerHTML+=(`
+          <h4 style="padding: 5px;">${day}</h4>
+          <p style="padding: 5px;">Opens: ${schedule[i].opens_at}</p>
+          <p style="padding: 5px;">Closes: ${schedule[i].closes_at}</p>`)
+         }
+         else if(schedule[i].weekday == 6 ){ let day = "Saturday:"
+          myResults.innerHTML+=(`
+          <h4 style="padding: 5px;">${day}</h4>
+          <p style="padding: 5px;">Opens: ${schedule[i].opens_at}</p>
+          <p style="padding: 5px;">Closes: ${schedule[i].closes_at}</p>`)
+         }
+         else if(schedule[i].weekday == 7 ){ let day = "Sunday:"
+          myResults.innerHTML+=(`
+          <h4 style="padding: 5px;">${day}</h4>
+          <p style="padding: 5px;">Opens: ${schedule[i].opens_at}</p>
+          <p style="padding: 5px;">Closes: ${schedule[i].closes_at}</p>`)
          }
        }};
        var myResults =document.getElementById('results')
         myResults.innerHTML = `<h2>Near You:</h2>
         <ul>
-        <p style = "padding:5px">${name}</p>
-        <p style = "padding:5px">${physical_address.address_1}, ${physical_address.city}, ${physical_address.state_province}</p>
-         <p style = "padding:5px">${description}</p>
-         <p style = "padding:5px">${phoneNumber}</p>
+        <p style = "padding:5px">Name: ${name}</p>
+        <p style = "padding:5px">Address: ${physical_address.address_1}, ${physical_address.city}, ${physical_address.state_province}</p>
+         <p style = "padding:5px">Description: ${description}</p>
+         <p style = "padding:5px">Phone Number: ${phoneNumber}</p>
          </ul>
          <h3>Schedule:</h3>`
          days()
