@@ -139,17 +139,13 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(71, 116, 131, 0.4);
+    
     color: white;
     text-align: center;
   }
 /*end of main content*/
 
-#footer{
-    position:relative ;
-    width: 100%;
-}
-    
+
 
 .footer-text {
     
@@ -157,12 +153,8 @@ body {
     min-height: 10vh;
     flex-direction: column;
     justify-content: space-around;
-<<<<<<< HEAD
  
     text-align: end;
-=======
-    text-align: center;
->>>>>>> 2ac34d6f9035ac08325ff92ea6cc6f7c44459b14
     font-size: 50px;
     color: aliceblue;
   
