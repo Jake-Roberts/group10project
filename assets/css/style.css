@@ -131,14 +131,23 @@ body {
     margin-top: 5%;
     font-size: 20px;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(71, 116, 131, 0.4);
+    color: white;
+    text-align: center;
+  }
 
-footer span {
+.footer-text {
     
     display: flex;
     min-height: 10vh;
     flex-direction: column;
     justify-content: space-around;
-    background-color:rgba(30, 125, 156, .5) ;
+ 
     text-align: end;
     font-size: 50px;
     color: aliceblue;
