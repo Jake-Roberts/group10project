@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+/*header css*/
 header {
    
     background-color:rgba(218, 238, 245, 0.5);  
@@ -47,7 +48,9 @@ header nav ul li:hover {
     border-radius: 10px;
     padding: 0 25px 0 25px;
 }
+/*end of header css*/
 
+/*main content css*/
 body {
     margin: 0;
     background-attachment: fixed;
@@ -131,6 +134,13 @@ body {
     margin-top: 5%;
     font-size: 20px;
 }
+/*end of main content*/
+
+#footer{
+    position:relative ;
+    width: 100%;
+}
+    
 
 footer span {
     
@@ -138,13 +148,15 @@ footer span {
     min-height: 10vh;
     flex-direction: column;
     justify-content: space-around;
-    background-color:rgba(30, 125, 156, .5) ;
-    text-align: end;
+    text-align: center;
     font-size: 50px;
     color: aliceblue;
   
    
 }
+
+
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
