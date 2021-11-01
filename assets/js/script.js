@@ -85,15 +85,15 @@ var requestOptions = {
        var myResults =document.getElementById('results')
         myResults.innerHTML = `<h2>Near You:</h2>
         <ul>
-        <p style = "padding:5px">Name: ${name}</p>
-        <p style = "padding:5px">Address: ${physical_address.address_1}, ${physical_address.city}, ${physical_address.state_province}</p>
-         <p style = "padding:5px">Description: ${description}</p>
-         <p style = "padding:5px">Phone Number: ${phoneNumber}</p>
+        <p style = "padding:5px"> ${name}</p>
+        <p style = "padding:5px"> <a href= "https://maps.google.com/?q=${physical_address.address_1}"> ${physical_address.address_1}, ${physical_address.city}, ${physical_address.state_province}</a></p>
+         <p style = "padding:5px"> ${phoneNumber}</p>
          </ul>
          <h3>Schedule:</h3>`
+        
          days()
   
-       console.log(name);
+       //console.log(name);
       //  var filteredResults = allTestingLocations.filter(location => location.physical_address.filter(address => address.postal_code == selectedZipCode).length > 0)
     
       };
