@@ -156,7 +156,7 @@ body {
     justify-content: space-around;
  
     text-align: end;
-    font-size: 50px;
+    font-size: 35px;
     color: aliceblue;
   
    
@@ -189,9 +189,9 @@ body {
     header nav ul li a {
         font-size: 30px;
     }
-    footer span{
-        text-align: center;
-        font-size: 30px;
+    .footer-text{
+       
+        font-size: 25px;
     }
     #hero{
         overflow-y: scroll;
@@ -234,9 +234,8 @@ body {
     header nav ul li a {
         font-size: 25px;
     }
-    footer span{
-        text-align: center;
-        font-size: 30px;
+    .footer-text{
+        font-size: 20px;
     }
     #hero{
         overflow-y: scroll;
@@ -279,10 +278,6 @@ body {
         justify-content: center;
     }
     header nav ul li a {
-        font-size: 20px;
-    }
-    footer span{
-        text-align: center;
         font-size: 20px;
     }
     #hero{
