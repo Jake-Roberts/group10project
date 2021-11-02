@@ -6,8 +6,9 @@
 header {
    
     background-color:rgba(218, 238, 245, 0.5);  
-    width: 100%;
+    max-width: 100%;
     overflow: auto;
+
 }
 head nav {
     float: left;
@@ -155,7 +156,7 @@ body {
     justify-content: space-around;
  
     text-align: end;
-    font-size: 50px;
+    font-size: 35px;
     color: aliceblue;
   
    
@@ -188,62 +189,117 @@ body {
     header nav ul li a {
         font-size: 30px;
     }
-    footer span{
+    .footer-text{
+       
+        font-size: 25px;
+    }
+    #hero{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #hero-text{
+        font-size: 35px;
+    }
+
+    #zip{
         text-align: center;
         font-size: 30px;
-}
-#hero{
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-#zip{
-    text-align: center;
-    font-size: 30px;
-}
-#submit-btn {
-    padding-top: 0;
-}
+    }
+    #submit-btn {
+        padding-top: 0;
+    }
 }
  /* MEDIA QUERY FOR TABLETS AND SMALLER */
  @media screen and (max-width: 768px) {
     header {
-        padding: 30px 15px;
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        
+    }
+    #header-text {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+       
+    }
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 25px;
+    }
+    .footer-text{
+        font-size: 20px;
+    }
+    #hero{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #hero-text{
+        font-size: 30px;
+    }
+
+    #zip{
+        text-align: center;
+        font-size: 25px;
+    }
+    #submit-btn {
+        padding-top: 0;
     }
     
    }
      /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
 
-    header nav ul li a {
-        font-size: 25px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    header {
+        padding-bottom: 0;
         justify-content: center;
-         }
-      
-      #header-text{
-          text-align: center;
-          font-size: larger;
-      }
-      #hero-text {
-          text-align: center;
-          font-size: medium;
-      }
-      #zip {
-          text-align: center;
-          font-size: medium;
-      }
-      #zipcodelist{
-          width: 100%;
-      }
-      #submit-btn{
-          width: 100%;
-      }
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        
     }
-      
+    #header-text {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+       
+    }
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    #hero{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #hero-text{
+        font-size: 25px;
+    }
 
+    #zip{
+        text-align: center;
+        font-size: 20px;
+    }
+    #submit-btn {
+        padding-top: 0;
+}
+.footer-text{
+    display: none;
+}
+      
+}
 
       
   
