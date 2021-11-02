@@ -87,7 +87,7 @@ var requestOptions = {
         <ul>
         <p style = "padding:5px"> ${name}</p>
         <p style = "padding:5px"> <a href= "https://maps.google.com/?q=${physical_address.address_1}"> ${physical_address.address_1}, ${physical_address.city}, ${physical_address.state_province}</a></p>
-         <p style = "padding:5px"> ${phoneNumber}</p>
+        <p style = “padding:5px”> <a href=“”>${phoneNumber}<a/></p>
          </ul>
          <h3>Schedule:</h3>`
         
